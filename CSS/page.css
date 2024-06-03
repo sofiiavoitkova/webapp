@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 32px;
+}
+
+#phrase {
+  margin: 20px 0 0 20px;
+}
+
+#element {
+  margin: 0 0 5px 20px;
+}
+
+#main-image {
+  margin: 20px;
+}
+
+.back {
+  display: block;
+  margin: 5px 0 0 20px;
+  position: relative;
+  font-size: 28px;
+}
