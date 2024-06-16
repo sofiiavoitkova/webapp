@@ -12,8 +12,8 @@ function getRandomImage(element) {
 
 function setElementDetails() {
   const params = new URLSearchParams(window.location.search);
-  const phrase = params.get("phrase") || "null";
-  const element = params.get("element") || "null";
+  const phrase = params.get("phrase") || "-";
+  const element = params.get("element") || "-";
 
   document.getElementById("phrase").innerText = "Phrase: " + phrase;
   document.getElementById("element").innerText = "Element: " + element;
@@ -28,6 +28,10 @@ function setElementDetails() {
 
   const imageUrl = getRandomImage(element);
   document.getElementById("main-image").src = `picture/${imageUrl}`;
+
+  const rotationDegrees = phrase.length * 10;
+  const fixedImage = document.getElementById("fixedImage");
+  fixedImage.style.transform = `rotate(${rotationDegrees}deg)`;
 }
 
 window.onload = setElementDetails;
