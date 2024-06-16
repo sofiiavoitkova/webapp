@@ -22,9 +22,22 @@ body {
   margin: 20px;
 }
 
-.back {
-  display: block;
+#fixedImage {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+}
+
+a {
   margin: 5px 0 0 20px;
   position: relative;
   font-size: 28px;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: rgb(96, 5, 224);
 }
